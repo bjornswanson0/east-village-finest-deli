@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>East Village Finest Deli · 50 Avenue B, NYC</title>
+  <meta name="description" content="East Village Finest Deli — your corner deli at 50 Avenue B, NYC. Breakfast sandwiches, heroes, wraps, strong coffee, and the famous $8 sandwich combo. Open early, open late, seven days a week.">
+  <meta property="og:title" content="East Village Finest Deli">
+  <meta property="og:description" content="Your corner deli on Avenue B. Sandwiches, coffee, groceries — open 6 AM to midnight (later on weekends).">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "East Village Finest Deli",
+    "servesCuisine": "Deli",
+    "telephone": "+1-212-260-8200",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "50 Avenue B",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "postalCode": "10009",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "06:00",
+        "closes": "00:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday"],
+        "opens": "06:00",
+        "closes": "01:00"
+      }
+    ],
+    "menu": "https://www.grubhub.com/restaurant/east-village-finest-deli-50-avenue-b-new-york/2266846",
+    "priceRange": "$"
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-nav" id="site-nav">
+    <a class="brand" href="#top">
+      <span class="brand-badge">EV</span>
+      <span class="brand-name">East Village Finest Deli</span>
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+      <a href="#menu">Menu</a>
+      <a href="#order">Order</a>
+      <a href="#about">About</a>
+      <a href="#visit">Visit</a>
+      <a class="btn btn-solid nav-cta" href="#order">Order Now</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="awning" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">Avenue B &middot; East Village &middot; NYC</p>
+        <h1>East Village<br>Finest Deli</h1>
+        <p class="tagline">Your corner deli on Avenue B. Breakfast at dawn, heroes at midnight, and coffee strong enough to carry you in between.</p>
+        <p class="open-status" id="open-status" aria-live="polite">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="open-status-text">Open 6 AM &ndash; midnight &middot; later on weekends</span>
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-solid" href="#order">Order Delivery</a>
+          <a class="btn btn-outline" href="#menu">See the Menu</a>
+        </div>
+      </div>
+      <div class="hero-ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>Sandwiches &bull; Coffee Bar &bull; Bagels &bull; Wraps &bull; Heroes &bull; Smoothies &bull; Groceries &bull; Open 7 Days &bull;&nbsp;</span><span>Sandwiches &bull; Coffee Bar &bull; Bagels &bull; Wraps &bull; Heroes &bull; Smoothies &bull; Groceries &bull; Open 7 Days &bull;&nbsp;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="section menu" id="menu">
+      <div class="section-inner">
+        <p class="section-eyebrow">What&rsquo;s Good</p>
+        <h2>The Hits</h2>
+        <div class="signature-grid">
+          <article class="signature-card">
+            <span class="price-tag">$8</span>
+            <h3>The Sandwich Combo</h3>
+            <p>Any sandwich with chips, a pickle, and a can of soda. The best deal on Avenue B, full stop.</p>
+          </article>
+          <article class="signature-card">
+            <span class="price-tag star">&#9733;</span>
+            <h3>Chicken Cutlet Sandwich</h3>
+            <p>The neighborhood favorite. Crispy, stacked, built to order on your bread of choice.</p>
+          </article>
+          <article class="signature-card">
+            <span class="price-tag">$11</span>
+            <h3>Cheeseburger Deluxe</h3>
+            <p>Comes with a soda. Griddled the way a deli burger should be.</p>
+          </article>
+          <article class="signature-card">
+            <span class="price-tag star">&#9749;</span>
+            <h3>The Drip Coffee</h3>
+            <p>Rich, hot, and famously strong. The cup regulars cross the street for, morning after morning.</p>
+          </article>
+        </div>
+
+        <h2 class="board-title">The Whole Board</h2>
+        <ul class="category-grid">
+          <li>Coffee Bar</li>
+          <li>Fresh Muffins &amp; Danishes</li>
+          <li>Fresh Juices</li>
+          <li>Smoothies</li>
+          <li>Bagels</li>
+          <li>Breakfast Sandwiches</li>
+          <li>Egg Platters</li>
+          <li>Tossed Salads</li>
+          <li>Salad Sandwiches</li>
+          <li>Wraps</li>
+          <li>Panini</li>
+          <li>Cold Cut Sandwiches</li>
+          <li>Special Sandwiches</li>
+          <li>Hot Heroes</li>
+          <li>Quesadillas</li>
+          <li>Avocado Sandwiches</li>
+          <li>Burgers</li>
+          <li>Side Orders</li>
+        </ul>
+        <p class="menu-note">Browse the full menu with prices on <a href="https://www.grubhub.com/restaurant/east-village-finest-deli-50-avenue-b-new-york/2266846" target="_blank" rel="noopener">Grubhub</a> or <a href="https://www.seamless.com/menu/east-village-finest-deli-50-avenue-b-new-york/2266846" target="_blank" rel="noopener">Seamless</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ ORDER ============ -->
+    <section class="section order" id="order">
+      <div class="section-inner">
+        <p class="section-eyebrow">Can&rsquo;t Make It In?</p>
+        <h2>Order Online</h2>
+        <p class="section-lede">Delivered anywhere in the neighborhood through your app of choice.</p>
+        <div class="order-grid">
+          <a class="order-card grubhub" href="https://www.grubhub.com/restaurant/east-village-finest-deli-50-avenue-b-new-york/2266846" target="_blank" rel="noopener">
+            <span class="order-name">Grubhub</span>
+            <span class="order-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="order-card seamless" href="https://www.seamless.com/menu/east-village-finest-deli-50-avenue-b-new-york/2266846" target="_blank" rel="noopener">
+            <span class="order-name">Seamless</span>
+            <span class="order-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="order-card doordash" href="https://www.doordash.com/store/east-village-finest-deli-new-york-545429/" target="_blank" rel="noopener">
+            <span class="order-name">DoorDash</span>
+            <span class="order-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="order-card ubereats" href="https://www.ubereats.com/store/east-village-finest-deli/pnjrsppMQqGb7pFQu2CI8g" target="_blank" rel="noopener">
+            <span class="order-name">Uber Eats</span>
+            <span class="order-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+        <p class="order-phone">Old school? Call it in: <a href="tel:+12122608200">(212) 260-8200</a></p>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="section-inner">
+        <p class="section-eyebrow">The Corner Store</p>
+        <h2>A Neighborhood Fixture</h2>
+        <div class="about-cols">
+          <div class="about-story">
+            <p>Some places just hold a block together. East Village Finest Deli is one of them &mdash; the corner spot on Avenue B where the coffee is already brewing before sunrise and the grill is still going after most kitchens have closed.</p>
+            <p>It&rsquo;s the full deal: a proper deli counter, a coffee bar, fresh juices, and shelves of groceries for everything you forgot. Sandwiches built to order, egg platters that fix a rough morning, and a menu deep enough that you could eat here every day for a month without repeating yourself. Plenty of regulars do.</p>
+            <p>No fuss, no lines out the door for the &rsquo;gram &mdash; just fast hands, friendly faces, and fair prices, seven days a week.</p>
+          </div>
+          <ul class="about-quotes">
+            <li class="quote-card">
+              <p>&ldquo;The coffee alone is worth the walk.&rdquo;</p>
+              <span>&mdash; what the regulars say</span>
+            </li>
+            <li class="quote-card">
+              <p>&ldquo;A menu this big has no business being this good.&rdquo;</p>
+              <span>&mdash; the block&rsquo;s consensus</span>
+            </li>
+            <li class="quote-card">
+              <p>&ldquo;In and out in five minutes, every time.&rdquo;</p>
+              <span>&mdash; the lunch crowd</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="section visit" id="visit">
+      <div class="section-inner">
+        <p class="section-eyebrow">Come Say Hi</p>
+        <h2>Find Us</h2>
+        <div class="visit-cols">
+          <div class="visit-info">
+            <h3>Address</h3>
+            <p class="visit-address">
+              50 Avenue B<br>
+              New York, NY 10009
+            </p>
+            <a class="btn btn-outline" href="https://maps.google.com/?q=East+Village+Finest+Deli,+50+Avenue+B,+New+York,+NY+10009" target="_blank" rel="noopener">Get Directions</a>
+            <h3>Phone</h3>
+            <p><a class="visit-phone" href="tel:+12122608200">(212) 260-8200</a></p>
+          </div>
+          <div class="visit-hours">
+            <h3>Hours</h3>
+            <table class="hours-table">
+              <tbody>
+                <tr data-day="1"><th scope="row">Monday</th><td>6:00 AM &ndash; 12:00 AM</td></tr>
+                <tr data-day="2"><th scope="row">Tuesday</th><td>6:00 AM &ndash; 12:00 AM</td></tr>
+                <tr data-day="3"><th scope="row">Wednesday</th><td>6:00 AM &ndash; 12:00 AM</td></tr>
+                <tr data-day="4"><th scope="row">Thursday</th><td>6:00 AM &ndash; 12:00 AM</td></tr>
+                <tr data-day="5"><th scope="row">Friday</th><td>6:00 AM &ndash; 1:00 AM</td></tr>
+                <tr data-day="6"><th scope="row">Saturday</th><td>6:00 AM &ndash; 1:00 AM</td></tr>
+                <tr data-day="0"><th scope="row">Sunday</th><td>6:00 AM &ndash; 12:00 AM</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="awning awning-footer" aria-hidden="true"></div>
+    <p class="footer-brand">East Village Finest Deli</p>
+    <p>50 Avenue B, New York, NY 10009 &middot; <a href="tel:+12122608200">(212) 260-8200</a></p>
+    <p class="footer-note">Made with <span aria-hidden="true">&hearts;</span> by a neighbor across the street. Unofficial fan-built site &mdash; East Village Finest Deli, if you want it, it&rsquo;s yours.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
