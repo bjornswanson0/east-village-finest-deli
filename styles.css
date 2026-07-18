@@ -372,6 +372,27 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
 .order-phone { margin-top: 1.75rem; font-weight: 600; }
 
 /* ---------- About ---------- */
+.storefront {
+  margin: 0 0 2.75rem;
+}
+
+.storefront svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 3px solid var(--ink);
+  border-radius: 10px;
+  box-shadow: 6px 6px 0 rgba(33, 31, 26, 0.15);
+}
+
+.storefront figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b675e;
+  font-style: italic;
+  margin-top: 0.75rem;
+}
+
 .about-cols {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
