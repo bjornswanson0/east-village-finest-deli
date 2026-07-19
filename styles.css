@@ -367,15 +367,16 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
 
 .order-logo {
   display: block;
-  height: 26px;
+  height: 24px;
   width: auto;
   max-width: 78%;
 }
 
-.order-card.seamless .order-logo { height: 36px; }
+.order-card.seamless .order-logo { height: 38px; }
+.order-card.doordash .order-logo { height: 20px; }
 
-.order-card.grubhub  { border-left-color: #ff8000; }
-.order-card.seamless { border-left-color: #00a863; }
+.order-card.grubhub  { border-left-color: #ff5500; }
+.order-card.seamless { border-left-color: #c90117; }
 .order-card.doordash { border-left-color: #ff3008; }
 .order-card.ubereats { border-left-color: #06c167; }
 
