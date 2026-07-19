@@ -341,11 +341,11 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
 .order-card {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 0.9rem;
   background: #fff;
   border-radius: 8px;
   border-left: 8px solid var(--maroon);
-  padding: 1.4rem 1.4rem;
+  padding: 1.15rem 1.4rem;
   text-decoration: none;
   color: var(--ink);
   transition: transform 0.12s ease, box-shadow 0.12s ease;
@@ -356,10 +356,31 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
   box-shadow: 0 6px 18px rgba(33, 31, 26, 0.14);
 }
 
-.order-card.grubhub  { border-left-color: #c8352e; }
-.order-card.seamless { border-left-color: #e5a41c; }
-.order-card.doordash { border-left-color: #7d2429; }
-.order-card.ubereats { border-left-color: #211f1a; }
+.order-badge {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 11px;
+  font-family: var(--body);
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.order-card.grubhub  { border-left-color: #ff8000; }
+.order-card.seamless { border-left-color: #00a863; }
+.order-card.doordash { border-left-color: #ff3008; }
+.order-card.ubereats { border-left-color: #06c167; }
+
+.order-card.grubhub  .order-badge { background: #ff8000; }
+.order-card.seamless .order-badge { background: #00a863; }
+.order-card.doordash .order-badge { background: #ff3008; font-style: italic; }
+.order-card.ubereats .order-badge { background: #06c167; }
+
+.order-arrow { margin-left: auto; }
 
 .order-name { font-size: 1.7rem; }
 
