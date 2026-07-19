@@ -3,8 +3,8 @@
    ========================================================== */
 
 :root {
-  --green: #17603b;
-  --green-dark: #0f4429;
+  --maroon: #7d2429;
+  --maroon-dark: #611b1f;
   --cream: #faf4e6;
   --cream-dark: #f1e6cd;
   --red: #c8352e;
@@ -27,7 +27,7 @@ body {
 
 img { max-width: 100%; }
 
-a { color: var(--green); }
+a { color: var(--maroon); }
 
 h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
   font-family: var(--display);
@@ -40,7 +40,7 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
   height: 34px;
   background: repeating-linear-gradient(
     90deg,
-    var(--green) 0 48px,
+    var(--maroon) 0 48px,
     var(--cream) 48px 96px
   );
   position: relative;
@@ -53,7 +53,7 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
   right: 0;
   height: 14px;
   background:
-    radial-gradient(circle at 24px -4px, var(--green) 22px, transparent 23px) 0 0 / 96px 14px repeat-x,
+    radial-gradient(circle at 24px -4px, var(--maroon) 22px, transparent 23px) 0 0 / 96px 14px repeat-x,
     radial-gradient(circle at 24px -4px, var(--cream) 22px, transparent 23px) 48px 0 / 96px 14px repeat-x;
 }
 
@@ -68,7 +68,7 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
   gap: 1rem;
   padding: 0.65rem 1.25rem;
   background: var(--cream);
-  border-bottom: 3px solid var(--green);
+  border-bottom: 3px solid var(--maroon);
 }
 
 .brand {
@@ -85,7 +85,7 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
   place-items: center;
   width: 2.2rem;
   height: 2.2rem;
-  background: var(--green);
+  background: var(--maroon);
   color: var(--cream);
   font-size: 1.15rem;
   border-radius: 4px;
@@ -138,8 +138,8 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
 }
 .btn:hover { transform: translateY(-2px); }
 
-.btn-solid { background: var(--red); color: var(--cream) !important; }
-.btn-solid:hover { background: #a92a24; }
+.btn-solid { background: var(--mustard); border-color: var(--mustard); color: var(--ink) !important; }
+.btn-solid:hover { background: #c78d13; border-color: #c78d13; }
 
 .btn-outline { background: transparent; color: var(--red); }
 .hero .btn-outline { border-color: var(--cream); color: var(--cream); }
@@ -147,7 +147,7 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
 
 /* ---------- Hero ---------- */
 .hero {
-  background: var(--green);
+  background: var(--maroon);
   color: var(--cream);
   text-align: center;
 }
@@ -269,7 +269,7 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
 .signature-card {
   position: relative;
   background: #fff;
-  border: 2px dashed var(--green);
+  border: 2px dashed var(--maroon);
   border-radius: 8px;
   padding: 1.5rem 1.25rem 1.25rem;
 }
@@ -304,7 +304,7 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   gap: 0.5rem 1.5rem;
-  background: var(--green);
+  background: var(--maroon);
   color: var(--cream);
   border-radius: 8px;
   padding: 1.75rem 2rem;
@@ -344,7 +344,7 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
   justify-content: space-between;
   background: #fff;
   border-radius: 8px;
-  border-left: 8px solid var(--green);
+  border-left: 8px solid var(--maroon);
   padding: 1.4rem 1.4rem;
   text-decoration: none;
   color: var(--ink);
@@ -358,7 +358,7 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
 
 .order-card.grubhub  { border-left-color: #c8352e; }
 .order-card.seamless { border-left-color: #e5a41c; }
-.order-card.doordash { border-left-color: #17603b; }
+.order-card.doordash { border-left-color: #7d2429; }
 .order-card.ubereats { border-left-color: #211f1a; }
 
 .order-name { font-size: 1.7rem; }
@@ -423,7 +423,7 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
 .quote-card span { font-size: 0.85rem; color: #55524a; }
 
 /* ---------- Visit ---------- */
-.visit { background: var(--green); color: var(--cream); }
+.visit { background: var(--maroon); color: var(--cream); }
 .visit .section-eyebrow { color: var(--mustard); }
 .visit a { color: var(--cream); }
 
@@ -501,7 +501,7 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
     align-items: flex-start;
     gap: 0;
     background: var(--cream);
-    border-bottom: 3px solid var(--green);
+    border-bottom: 3px solid var(--maroon);
     padding: 0.5rem 1.25rem 1rem;
   }
 
