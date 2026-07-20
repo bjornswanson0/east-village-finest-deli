@@ -287,6 +287,25 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
 
 .signature-card p { font-size: 0.95rem; color: #4c4a44; }
 
+.card-order {
+  display: inline-block;
+  margin-top: 0.85rem;
+  font-family: var(--display);
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  color: var(--red);
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+}
+
+.card-order span {
+  display: inline-block;
+  transition: transform 0.12s ease;
+}
+
+.card-order:hover { color: var(--maroon); }
+.card-order:hover span { transform: translateX(4px); }
+
 .price-tag {
   position: absolute;
   top: -14px;
