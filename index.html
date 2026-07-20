@@ -396,13 +396,69 @@
         </div>
 
         <figure class="uniform">
-          <div class="uniform-grid">
-            <img src="assets/photos/crew-shirt.jpg" width="1050" height="1400" loading="lazy"
-                 alt="The crew's work shirt on a hanger: maroon micro-check with an embroidered East Village Finest Deli chest patch">
-            <img src="assets/photos/crew-patch.jpg" width="1400" height="964" loading="lazy"
-                 alt="Close-up of the chest patch: East Village Finest Deli embroidered in maroon script on cream twill with a maroon stitched border">
-          </div>
-          <figcaption>The real colors &mdash; the shirts the crew wears behind the counter.</figcaption>
+          <svg viewBox="0 0 640 380" role="img" aria-label="Illustration of the crew's uniform: a maroon micro-check work shirt on a wooden hanger beside the embroidered East Village Finest Deli patch in maroon script on cream twill.">
+            <defs>
+              <pattern id="microcheck" width="6" height="6" patternUnits="userSpaceOnUse">
+                <rect width="6" height="6" fill="#79333a"/>
+                <line x1="0" y1="3" x2="6" y2="3" stroke="#d9c9b8" stroke-width="0.9" opacity="0.45"/>
+                <line x1="3" y1="0" x2="3" y2="6" stroke="#d9c9b8" stroke-width="0.9" opacity="0.45"/>
+              </pattern>
+            </defs>
+            <!-- night backdrop -->
+            <rect width="640" height="380" fill="#1b202b"/>
+            <!-- clothes rail -->
+            <rect x="36" y="34" width="568" height="7" rx="3.5" fill="#3a3f47"/>
+            <circle cx="40" cy="37.5" r="6" fill="#454b56"/>
+            <circle cx="600" cy="37.5" r="6" fill="#454b56"/>
+            <!-- wooden hanger -->
+            <g stroke="#c9a86a" fill="none" stroke-linecap="round">
+              <path d="M210 52 L210 40 a11 11 0 1 1 11 -12" stroke-width="5"/>
+              <path d="M210 52 L118 90 L302 90 Z" stroke-width="7" stroke-linejoin="round"/>
+            </g>
+            <!-- shirt -->
+            <g>
+              <!-- sleeves -->
+              <polygon points="122,96 92,178 148,192 158,116" fill="url(#microcheck)"/>
+              <polygon points="298,96 328,178 272,192 262,116" fill="url(#microcheck)"/>
+              <rect x="90" y="172" width="60" height="10" transform="rotate(14 120 177)" fill="#5f2328"/>
+              <rect x="270" y="172" width="60" height="10" transform="rotate(-14 300 177)" fill="#5f2328"/>
+              <!-- body -->
+              <path d="M132 100 L162 88 L210 96 L258 88 L288 100 L282 330 L138 330 Z" fill="url(#microcheck)"/>
+              <!-- bottom hem -->
+              <path d="M138 322 L282 322 L282 330 L138 330 Z" fill="#5f2328"/>
+              <!-- placket + buttons -->
+              <rect x="204" y="92" width="12" height="230" fill="#6b2b31"/>
+              <g fill="#e8dcc0">
+                <circle cx="210" cy="118" r="2.6"/><circle cx="210" cy="152" r="2.6"/><circle cx="210" cy="186" r="2.6"/><circle cx="210" cy="220" r="2.6"/><circle cx="210" cy="254" r="2.6"/><circle cx="210" cy="288" r="2.6"/>
+              </g>
+              <!-- collar -->
+              <polygon points="162,88 210,96 186,116" fill="#5f2328"/>
+              <polygon points="258,88 210,96 234,116" fill="#5f2328"/>
+              <!-- chest pocket (wearer's left) -->
+              <rect x="232" y="150" width="34" height="38" fill="none" stroke="#5f2328" stroke-width="2.5"/>
+              <!-- chest patch (wearer's right) -->
+              <g transform="rotate(-2 172 166)">
+                <rect x="146" y="150" width="52" height="32" rx="8" fill="#f7f0dd" stroke="#7d2429" stroke-width="3.5"/>
+                <path d="M154 162 q6 -7 12 0 t12 0 t12 0" fill="none" stroke="#7d2429" stroke-width="2" stroke-linecap="round"/>
+                <path d="M158 172 q6 -7 12 0 t12 0" fill="none" stroke="#7d2429" stroke-width="2" stroke-linecap="round"/>
+              </g>
+            </g>
+            <!-- the patch, writ large -->
+            <g transform="rotate(2 470 190)">
+              <rect x="356" y="118" width="232" height="138" rx="26" fill="#100f14" opacity="0.55"/>
+              <rect x="350" y="112" width="232" height="138" rx="26" fill="#f7f0dd" stroke="#7d2429" stroke-width="11"/>
+              <rect x="363" y="125" width="206" height="112" rx="17" fill="none" stroke="#a24a4f" stroke-width="1.3" stroke-dasharray="3 4" opacity="0.55"/>
+              <g font-family="Yellowtail, 'Brush Script MT', cursive" fill="#7d2429" text-anchor="middle" transform="rotate(-2 466 181)">
+                <text x="466" y="172" font-size="34">East Village</text>
+                <text x="466" y="216" font-size="34">Finest Deli</text>
+              </g>
+            </g>
+            <!-- caption chip -->
+            <g font-family="Bebas Neue, 'Arial Narrow', sans-serif" fill="#e5a41c">
+              <text x="466" y="292" text-anchor="middle" font-size="15" letter-spacing="2.5">THE CREW'S COLORS · SINCE 2010</text>
+            </g>
+          </svg>
+          <figcaption>The uniform &mdash; maroon plaid and a script patch, redrawn from the shirts the crew wears behind the counter.</figcaption>
         </figure>
       </div>
     </section>

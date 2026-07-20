@@ -500,40 +500,23 @@ h1, h2, h3, .brand-name, .btn, .card-order, .price-tag {
 .quote-card span { font-size: 0.85rem; color: #3a372f; }
 
 /* ---------- Crew uniform figure ---------- */
-.uniform {
-  margin: 2.75rem 0 0;
-  padding: 1.25rem 1.25rem 1rem;
-  border-radius: 10px;
-  background:
-    repeating-linear-gradient(0deg, rgba(250, 244, 230, 0.13) 0 1px, transparent 1px 5px),
-    repeating-linear-gradient(90deg, rgba(250, 244, 230, 0.13) 0 1px, transparent 1px 5px),
-    var(--maroon);
-}
+.uniform { margin: 2.75rem 0 0; }
 
-.uniform-grid {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  gap: 1.25rem;
-  height: clamp(240px, 38vw, 420px);
-}
-
-.uniform-grid img {
+.uniform svg {
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   border: 3px solid var(--ink);
-  border-radius: 8px;
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  box-shadow: 6px 6px 0 rgba(33, 31, 26, 0.15);
 }
-
-.uniform-grid img:first-child { object-position: 50% 30%; }
 
 .uniform figcaption {
   text-align: center;
   font-size: 0.9rem;
-  color: var(--cream-dark);
+  color: #6b675e;
   font-style: italic;
-  margin-top: 0.85rem;
+  margin-top: 0.75rem;
 }
 
 /* ---------- Visit ---------- */
@@ -650,13 +633,6 @@ h1, h2, h3, .brand-name, .btn, .card-order, .price-tag {
 
   .about-cols,
   .visit-cols { grid-template-columns: 1fr; }
-
-  .uniform-grid {
-    grid-template-columns: 1fr;
-    height: auto;
-  }
-
-  .uniform-grid img { height: auto; }
 
   .section { padding: 3.25rem 1.25rem; }
 }
