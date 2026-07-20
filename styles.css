@@ -107,15 +107,10 @@ h1, h2, h3, .brand-name, .btn, .card-order, .price-tag, .footer-brand {
 }
 
 .brand-badge {
-  font-family: var(--display);
-  display: grid;
-  place-items: center;
-  width: 2.2rem;
-  height: 2.2rem;
-  background: var(--maroon);
-  color: var(--cream);
-  font-size: 1.15rem;
-  border-radius: 4px;
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  flex-shrink: 0;
 }
 
 .brand-name { font-size: 1.35rem; line-height: 1; }

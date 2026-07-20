@@ -60,7 +60,39 @@
 
   <header class="site-nav" id="site-nav">
     <a class="brand" href="#top">
-      <span class="brand-badge">EV</span>
+      <svg class="brand-badge" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <defs>
+          <clipPath id="brand-badge-clip"><rect width="64" height="64" rx="10"/></clipPath>
+        </defs>
+        <g clip-path="url(#brand-badge-clip)">
+          <!-- night sky -->
+          <rect width="64" height="64" fill="#1b202b"/>
+          <!-- brick face -->
+          <rect x="4" y="6" width="56" height="22" fill="#9c4530"/>
+          <line x1="4" y1="13" x2="60" y2="13" stroke="#6f3122" stroke-width="1.5"/>
+          <line x1="4" y1="20" x2="60" y2="20" stroke="#6f3122" stroke-width="1.5"/>
+          <rect x="12" y="10" width="9" height="14" fill="#23202b"/>
+          <rect x="43" y="10" width="9" height="14" fill="#23202b"/>
+          <!-- awning with lettering and trim -->
+          <rect x="2" y="26" width="60" height="13" fill="#7d2429"/>
+          <text x="32" y="36.5" text-anchor="middle" font-family="Bebas Neue, 'Arial Narrow', sans-serif" font-size="10" letter-spacing="2" fill="#ffffff">DELI</text>
+          <rect x="2" y="39" width="60" height="2.5" fill="#e8e6df"/>
+          <g fill="#7d2429">
+            <circle cx="10" cy="41" r="3.5"/>
+            <circle cx="24" cy="41" r="3.5"/>
+            <circle cx="40" cy="41" r="3.5"/>
+            <circle cx="54" cy="41" r="3.5"/>
+          </g>
+          <!-- glowing storefront windows -->
+          <rect x="7" y="45" width="50" height="13" fill="#f8e2ae"/>
+          <line x1="23" y1="45" x2="23" y2="58" stroke="#1a1f28" stroke-width="2.5"/>
+          <line x1="41" y1="45" x2="41" y2="58" stroke="#1a1f28" stroke-width="2.5"/>
+          <rect x="11" y="48" width="8" height="6" rx="1" fill="#c8352e"/>
+          <rect x="45" y="48" width="8" height="6" rx="1" fill="#e5a41c"/>
+          <!-- sidewalk -->
+          <rect x="0" y="58" width="64" height="6" fill="#454b56"/>
+        </g>
+      </svg>
       <span class="brand-name">East Village Finest Deli</span>
     </a>
     <span class="nav-status" id="nav-status" hidden>
