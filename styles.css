@@ -56,7 +56,7 @@ a { color: var(--maroon); }
 
 .skip-link:focus { top: 0; }
 
-h1, h2, h3, .brand-name, .btn, .card-order, .price-tag, .footer-brand {
+h1, h2, h3, .brand-name, .btn, .card-order, .price-tag {
   font-family: var(--display);
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -499,6 +499,43 @@ h1, h2, h3, .brand-name, .btn, .card-order, .price-tag, .footer-brand {
 .quote-card p { font-weight: 700; font-size: 1.05rem; margin-bottom: 0.25rem; }
 .quote-card span { font-size: 0.85rem; color: #3a372f; }
 
+/* ---------- Crew uniform figure ---------- */
+.uniform {
+  margin: 2.75rem 0 0;
+  padding: 1.25rem 1.25rem 1rem;
+  border-radius: 10px;
+  background:
+    repeating-linear-gradient(0deg, rgba(250, 244, 230, 0.13) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(90deg, rgba(250, 244, 230, 0.13) 0 1px, transparent 1px 5px),
+    var(--maroon);
+}
+
+.uniform-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1.25rem;
+  height: clamp(240px, 38vw, 420px);
+}
+
+.uniform-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid var(--ink);
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.uniform-grid img:first-child { object-position: 50% 30%; }
+
+.uniform figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--cream-dark);
+  font-style: italic;
+  margin-top: 0.85rem;
+}
+
 /* ---------- Visit ---------- */
 .visit { background: var(--maroon); color: var(--cream); }
 .visit .section-eyebrow { color: var(--mustard); }
@@ -566,7 +603,13 @@ h1, h2, h3, .brand-name, .btn, .card-order, .price-tag, .footer-brand {
 
 .site-footer a { color: var(--mustard); }
 
-.footer-brand { font-size: 1.8rem; margin-bottom: 0.4rem; }
+.footer-patch {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 0 auto 1rem;
+  filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.4));
+}
 
 .footer-note {
   margin-top: 1rem;
@@ -607,6 +650,13 @@ h1, h2, h3, .brand-name, .btn, .card-order, .price-tag, .footer-brand {
 
   .about-cols,
   .visit-cols { grid-template-columns: 1fr; }
+
+  .uniform-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .uniform-grid img { height: auto; }
 
   .section { padding: 3.25rem 1.25rem; }
 }

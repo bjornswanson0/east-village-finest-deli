@@ -17,7 +17,7 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&family=Yellowtail&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
@@ -394,6 +394,16 @@
             </li>
           </ul>
         </div>
+
+        <figure class="uniform">
+          <div class="uniform-grid">
+            <img src="assets/photos/crew-shirt.jpg" width="1050" height="1400" loading="lazy"
+                 alt="The crew's work shirt on a hanger: maroon micro-check with an embroidered East Village Finest Deli chest patch">
+            <img src="assets/photos/crew-patch.jpg" width="1400" height="964" loading="lazy"
+                 alt="Close-up of the chest patch: East Village Finest Deli embroidered in maroon script on cream twill with a maroon stitched border">
+          </div>
+          <figcaption>The real colors &mdash; the shirts the crew wears behind the counter.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -443,7 +453,14 @@
 
   <footer class="site-footer">
     <div class="awning awning-footer" aria-hidden="true"></div>
-    <p class="footer-brand">East Village Finest Deli</p>
+    <svg class="footer-patch" viewBox="0 0 340 200" role="img" aria-label="East Village Finest Deli embroidered shirt patch">
+      <rect x="10" y="10" width="320" height="180" rx="34" fill="#f7f0dd" stroke="#7d2429" stroke-width="13"/>
+      <rect x="27" y="27" width="286" height="146" rx="22" fill="none" stroke="#a24a4f" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.55"/>
+      <g font-family="Yellowtail, 'Brush Script MT', cursive" fill="#7d2429" text-anchor="middle" transform="rotate(-2 170 100)">
+        <text x="170" y="95" font-size="46">East Village</text>
+        <text x="170" y="153" font-size="46">Finest Deli</text>
+      </g>
+    </svg>
     <p>50 Avenue B, New York, NY 10009 &middot; <a href="tel:+12122608200">(212) 260-8200</a></p>
     <p class="footer-note">Made with <span aria-hidden="true">&hearts;</span> by a neighbor across the street. Unofficial fan-built site &mdash; East Village Finest Deli, if you want it, it&rsquo;s yours.</p>
   </footer>
