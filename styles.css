@@ -29,6 +29,33 @@ img { max-width: 100%; }
 
 a { color: var(--maroon); }
 
+:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.hero :focus-visible,
+.visit :focus-visible,
+.site-footer :focus-visible {
+  outline-color: var(--mustard);
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 100;
+  background: var(--ink);
+  color: var(--cream);
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0 0 6px 6px;
+  text-decoration: none;
+}
+
+.skip-link:focus { top: 0; }
+
 h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
   font-family: var(--display);
   font-weight: 400;
@@ -460,7 +487,7 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
 .quote-card:nth-child(3) { transform: rotate(-0.5deg); background: #fff; }
 
 .quote-card p { font-weight: 700; font-size: 1.05rem; margin-bottom: 0.25rem; }
-.quote-card span { font-size: 0.85rem; color: #55524a; }
+.quote-card span { font-size: 0.85rem; color: #3a372f; }
 
 /* ---------- Visit ---------- */
 .visit { background: var(--maroon); color: var(--cream); }

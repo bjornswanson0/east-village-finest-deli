@@ -58,15 +58,28 @@
   var toggle = document.getElementById("nav-toggle");
   var links = document.getElementById("nav-links");
   if (toggle && links) {
+    function closeNav() {
+      links.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    }
+
     toggle.addEventListener("click", function () {
       var open = links.classList.toggle("open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
     links.querySelectorAll("a").forEach(function (a) {
-      a.addEventListener("click", function () {
-        links.classList.remove("open");
-        toggle.setAttribute("aria-expanded", "false");
-      });
+      a.addEventListener("click", closeNav);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && links.classList.contains("open")) {
+        closeNav();
+        toggle.focus();
+      }
+    });
+    document.addEventListener("click", function (e) {
+      if (links.classList.contains("open") && !links.contains(e.target) && !toggle.contains(e.target)) {
+        closeNav();
+      }
     });
   }
 })();
