@@ -137,6 +137,24 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
 
 .nav-cta { padding: 0.45rem 1.1rem; }
 
+.nav-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #55524a;
+  white-space: nowrap;
+}
+
+.nav-status[hidden] { display: none; }
+
+.nav-status .status-dot { width: 8px; height: 8px; }
+
+@media (max-width: 470px) {
+  .nav-status { display: none; }
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -225,8 +243,9 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
   border-radius: 50%;
   background: var(--mustard);
 }
-.open-status.is-open .status-dot { background: #3ddc74; box-shadow: 0 0 8px #3ddc74; }
-.open-status.is-closed .status-dot { background: var(--red); }
+.is-open .status-dot { background: #3ddc74; box-shadow: 0 0 8px #3ddc74; }
+.is-closed .status-dot { background: var(--red); }
+.nav-status.is-open .status-dot { background: #1e9e4f; box-shadow: none; }
 
 .hero-ctas {
   display: flex;

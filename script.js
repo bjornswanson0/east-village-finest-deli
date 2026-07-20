@@ -27,23 +27,35 @@
 
     if (now.minutes >= 360) {
       var closesAt1am = now.day === 5 || now.day === 6;
-      return { open: true, text: closesAt1am ? "Open now · closes at 1 AM" : "Open now · closes at midnight" };
+      return closesAt1am
+        ? { open: true, text: "Open now · closes at 1 AM", short: "Open til 1 AM" }
+        : { open: true, text: "Open now · closes at midnight", short: "Open til 12 AM" };
     }
     if (now.minutes < 60 && lateNightDays.indexOf(now.day) !== -1) {
-      return { open: true, text: "Open now · closes at 1 AM" };
+      return { open: true, text: "Open now · closes at 1 AM", short: "Open til 1 AM" };
     }
-    return { open: false, text: "Closed · opens at 6 AM" };
+    return { open: false, text: "Closed · opens at 6 AM", short: "Opens 6 AM" };
   }
 
   function updateStatus() {
+    var status = openStatus(nyNow());
+
     var pill = document.getElementById("open-status");
     var text = document.getElementById("open-status-text");
-    if (!pill || !text) return;
+    if (pill && text) {
+      pill.classList.toggle("is-open", status.open);
+      pill.classList.toggle("is-closed", !status.open);
+      text.textContent = status.text;
+    }
 
-    var status = openStatus(nyNow());
-    pill.classList.toggle("is-open", status.open);
-    pill.classList.toggle("is-closed", !status.open);
-    text.textContent = status.text;
+    var navPill = document.getElementById("nav-status");
+    var navText = document.getElementById("nav-status-text");
+    if (navPill && navText) {
+      navPill.hidden = false;
+      navPill.classList.toggle("is-open", status.open);
+      navPill.classList.toggle("is-closed", !status.open);
+      navText.textContent = status.short;
+    }
   }
 
   updateStatus();
