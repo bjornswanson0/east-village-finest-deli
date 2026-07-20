@@ -56,7 +56,7 @@ a { color: var(--maroon); }
 
 .skip-link:focus { top: 0; }
 
-h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
+h1, h2, h3, .brand-name, .btn, .card-order, .price-tag, .footer-brand {
   font-family: var(--display);
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -336,7 +336,6 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
 .card-order {
   display: inline-block;
   margin-top: 0.85rem;
-  font-family: var(--display);
   font-size: 1.1rem;
   letter-spacing: 0.05em;
   color: var(--red);
@@ -445,11 +444,8 @@ h1, h2, h3, .brand-name, .btn, .order-name, .price-tag, .footer-brand {
 .order-card.doordash { border-left-color: #ff3008; }
 .order-card.ubereats { border-left-color: #06c167; }
 
-.order-arrow { margin-left: auto; }
-
-.order-name { font-size: 1.7rem; }
-
 .order-arrow {
+  margin-left: auto;
   font-size: 1.5rem;
   transition: transform 0.12s ease;
 }
