@@ -435,6 +435,91 @@ h1, h2, h3, .brand-name, .btn, .card-order, .price-tag {
 
 .menu-note { margin-top: 1.25rem; font-size: 0.95rem; }
 
+/* ---------- Menu: printed-menu board ---------- */
+.board-title + .menu-lede { margin: -1rem 0 1.5rem; max-width: 42rem; font-size: 0.95rem; }
+
+.menu-board {
+  columns: 2;
+  column-gap: 1.25rem;
+}
+
+.menu-cat {
+  break-inside: avoid;
+  background: #fff;
+  border: 2px dashed var(--maroon);
+  border-radius: 8px;
+  padding: 1.4rem 1.4rem 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.menu-cat h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-size: 1.6rem;
+  border-bottom: 3px solid var(--mustard);
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.6rem;
+}
+
+.cat-price { color: var(--red); font-size: 1.35rem; white-space: nowrap; }
+
+.cat-note {
+  font-size: 0.85rem;
+  color: #6b675e;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.menu-items { list-style: none; }
+
+.menu-items li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted rgba(125, 36, 41, 0.35);
+}
+
+.menu-items li:last-child { border-bottom: none; }
+
+.mi-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.mi-price {
+  font-family: var(--display);
+  font-size: 1.15rem;
+  color: var(--red);
+  white-space: nowrap;
+}
+
+.mi-desc { font-size: 0.85rem; color: #6b675e; line-height: 1.45; }
+
+/* ---------- Catering ---------- */
+.catering { background: var(--mustard); }
+
+.catering .section-eyebrow { color: var(--maroon); }
+
+.catering-lede { max-width: 42rem; margin-bottom: 1.5rem; }
+
+.catering .btn-solid {
+  background: var(--maroon);
+  border-color: var(--maroon);
+  color: var(--cream) !important;
+}
+
+.catering .btn-solid:hover {
+  background: var(--maroon-dark);
+  border-color: var(--maroon-dark);
+}
+
+.catering-note { margin-top: 1rem; font-size: 0.9rem; font-weight: 600; }
+
+.review-cta { margin-top: 2.25rem; font-weight: 600; }
+
 /* ---------- Order ---------- */
 .order { background: var(--cream-dark); }
 
@@ -720,6 +805,8 @@ h1, h2, h3, .brand-name, .btn, .card-order, .price-tag {
 
   .about-cols,
   .visit-cols { grid-template-columns: 1fr; }
+
+  .menu-board { columns: 1; }
 
   .section { padding: 3.25rem 1.25rem; }
 

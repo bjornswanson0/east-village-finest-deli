@@ -8,6 +8,7 @@
 //   order_click      {platform, link_location, item}  — delivery-platform clicks
 //   call_click       {link_location}                  — taps on the phone number
 //   directions_click {link_location}                  — "Get Directions" clicks
+//   review_click     {site, link_location}            — Yelp / Google review-link clicks
 
 (function () {
   var GA_MEASUREMENT_ID = "G-1NT753NHN1";
@@ -59,8 +60,17 @@
       }
     }
 
+    if (href.indexOf("yelp.com") !== -1) {
+      window.gtag("event", "review_click", { site: "yelp", link_location: linkLocation(a) });
+      return;
+    }
+
     if (href.indexOf("maps.google") !== -1) {
-      window.gtag("event", "directions_click", { link_location: linkLocation(a) });
+      if (a.closest(".review-cta")) {
+        window.gtag("event", "review_click", { site: "google", link_location: linkLocation(a) });
+      } else {
+        window.gtag("event", "directions_click", { link_location: linkLocation(a) });
+      }
     }
   });
 })();
