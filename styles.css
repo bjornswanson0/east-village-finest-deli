@@ -229,8 +229,8 @@ h1, h2, h3, .brand-name, .btn, .card-order, .price-tag {
 
 .eyebrow {
   font-weight: 700;
-  font-size: 0.85rem;
-  letter-spacing: 0.35em;
+  font-size: clamp(1.05rem, 3vw, 1.35rem);
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--mustard);
   margin-bottom: 1rem;
