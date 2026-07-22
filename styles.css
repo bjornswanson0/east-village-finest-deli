@@ -342,7 +342,6 @@ h1, h2, h3, .brand-name, .btn, .card-order, .price-tag {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.25rem;
-  margin-bottom: 3.5rem;
 }
 
 .card-label {
@@ -403,7 +402,7 @@ h1, h2, h3, .brand-name, .btn, .card-order, .price-tag {
 .price-tag.star { background: var(--mustard); color: var(--ink); }
 
 /* ---------- Menu: category board ---------- */
-.board-title { margin-top: 0; }
+.board-title { margin-top: 3.25rem; }
 
 .category-grid {
   list-style: none;
