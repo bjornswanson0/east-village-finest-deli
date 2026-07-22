@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Ahead — East Village Finest Deli (print flyer)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&family=Yellowtail&display=swap" rel="stylesheet">
+  <style>
+    /* Letter-size flyer for the register line and delivery bags.
+       Print from the browser (Ctrl+P), margins: none, background graphics: on. */
+    @page { size: letter; margin: 0; }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --maroon: #7d2429;
+      --maroon-dark: #611b1f;
+      --cream: #faf4e6;
+      --cream-dark: #f1e6cd;
+      --red: #c8352e;
+      --mustard: #e5a41c;
+      --ink: #211f1a;
+    }
+
+    body { font-family: "Inter", sans-serif; color: var(--ink); }
+
+    .page {
+      width: 8.5in;
+      height: 11in;
+      background: var(--cream);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .masthead {
+      background: var(--maroon);
+      color: var(--cream);
+      text-align: center;
+      padding: 0.55in 0.5in 0.35in;
+    }
+
+    .masthead .script {
+      font-family: "Yellowtail", cursive;
+      font-size: 34px;
+      color: var(--mustard);
+      display: block;
+      margin-bottom: 0.05in;
+    }
+
+    .masthead h1 {
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      font-size: 92px;
+      line-height: 0.95;
+      letter-spacing: 0.02em;
+    }
+
+    .masthead p {
+      margin-top: 0.12in;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--cream-dark);
+    }
+
+    .awning {
+      height: 0.28in;
+      background: repeating-linear-gradient(90deg, var(--maroon) 0 0.45in, var(--cream) 0.45in 0.9in);
+      border-bottom: 4px solid var(--ink);
+    }
+
+    .body {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55in;
+      padding: 0.35in 0.6in;
+    }
+
+    .call-block { text-align: center; max-width: 3.9in; }
+
+    .call-block .label {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 30px;
+      letter-spacing: 0.18em;
+      color: var(--red);
+    }
+
+    .call-block .phone {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 54px;
+      line-height: 1.05;
+      white-space: nowrap;
+      margin: 0.08in 0;
+    }
+
+    .call-block .sub {
+      font-size: 16px;
+      font-weight: 600;
+      color: #55524a;
+    }
+
+    .divider {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.1in;
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 24px;
+      color: #8a857a;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      width: 3px;
+      height: 0.85in;
+      background: var(--cream-dark);
+    }
+
+    .qr-block { text-align: center; }
+
+    .qr-block img {
+      width: 2.5in;
+      height: 2.5in;
+      display: block;
+      margin: 0 auto 0.15in;
+      border: 6px solid var(--ink);
+      border-radius: 12px;
+      padding: 0.12in;
+      background: var(--cream);
+    }
+
+    .qr-block .label {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 26px;
+      letter-spacing: 0.08em;
+    }
+
+    .qr-block .apps {
+      margin-top: 0.05in;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--maroon);
+    }
+
+    .combo-strip {
+      background: var(--mustard);
+      border-top: 4px solid var(--ink);
+      border-bottom: 4px solid var(--ink);
+      text-align: center;
+      padding: 0.16in 0.5in;
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 27px;
+      letter-spacing: 0.06em;
+    }
+
+    .footer {
+      background: var(--ink);
+      color: var(--cream);
+      text-align: center;
+      padding: 0.28in 0.5in 0.34in;
+    }
+
+    .footer .address {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 25px;
+      letter-spacing: 0.08em;
+    }
+
+    .footer .hours {
+      margin-top: 0.06in;
+      font-size: 15px;
+      font-weight: 600;
+      color: #cfc9bb;
+    }
+
+    .footer .hours strong { color: var(--mustard); }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <span class="script">East Village Finest Deli</span>
+      <h1>Skip the Line.<br>Order Ahead.</h1>
+      <p>Your sandwich, hot and waiting &mdash; not the other way around.</p>
+    </header>
+    <div class="awning"></div>
+
+    <main class="body">
+      <div class="call-block">
+        <p class="label">Call the counter</p>
+        <p class="phone">(212) 260-8200</p>
+        <p class="sub">Order direct from the shop &mdash; ready for pickup, or free local delivery on orders over $10.</p>
+      </div>
+      <div class="divider">or</div>
+      <div class="qr-block">
+        <img src="qr-code.png" alt="QR code linking to the East Village Finest Deli website">
+        <p class="label">Scan for menu &amp; delivery</p>
+        <p class="apps">Grubhub &middot; Seamless &middot; DoorDash &middot; Uber Eats</p>
+      </div>
+    </main>
+
+    <div class="combo-strip">The $8 combo: any sandwich + chips + pickle + soda</div>
+
+    <footer class="footer">
+      <p class="address">50 Avenue B &middot; at E 4th St &middot; New York</p>
+      <p class="hours">Open <strong>6 AM &ndash; midnight</strong> every day &middot; til <strong>1 AM</strong> Friday &amp; Saturday</p>
+    </footer>
+  </div>
+</body>
+</html>

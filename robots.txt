@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bjornswanson0.github.io/east-village-finest-deli/sitemap.xml
