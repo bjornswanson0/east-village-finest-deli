@@ -278,6 +278,15 @@ h1, h2, h3, .brand-name, .btn, .card-order, .price-tag {
   flex-wrap: wrap;
 }
 
+.hero-apps {
+  margin-top: 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cream-dark);
+}
+
+.hero-apps a { color: var(--cream); }
+
 /* ---------- Ticker ---------- */
 .hero-ticker {
   background: var(--mustard);
@@ -475,7 +484,47 @@ h1, h2, h3, .brand-name, .btn, .card-order, .price-tag {
 }
 .order-card:hover .order-arrow { transform: translateX(5px); }
 
-.order-phone { margin-top: 1.75rem; font-weight: 600; }
+.call-direct {
+  display: block;
+  margin-top: 2rem;
+  background: var(--maroon);
+  color: var(--cream);
+  border-radius: 8px;
+  padding: 1.4rem 1.6rem;
+  text-decoration: none;
+  box-shadow: 4px 4px 0 rgba(33, 31, 26, 0.15);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.call-direct:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 7px 0 rgba(33, 31, 26, 0.18);
+}
+
+.call-direct-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--mustard);
+  margin-bottom: 0.3rem;
+}
+
+.call-direct-number {
+  display: block;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(2rem, 6vw, 2.8rem);
+  line-height: 1.05;
+}
+
+.call-direct-note {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  color: var(--cream-dark);
+}
 
 /* ---------- About ---------- */
 .storefront {
@@ -623,12 +672,21 @@ h1, h2, h3, .brand-name, .btn, .card-order, .price-tag {
   filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.4));
 }
 
+.footer-order {
+  margin-top: 0.4rem;
+  font-weight: 600;
+  padding: 0 1.5rem;
+}
+
 .footer-note {
   margin-top: 1rem;
   font-size: 0.85rem;
   color: #b5b0a4;
   padding: 0 1.5rem;
 }
+
+/* ---------- Sticky order bar (mobile) ---------- */
+.order-bar { display: none; }
 
 /* ---------- Mobile ---------- */
 @media (max-width: 760px) {
@@ -664,4 +722,42 @@ h1, h2, h3, .brand-name, .btn, .card-order, .price-tag {
   .visit-cols { grid-template-columns: 1fr; }
 
   .section { padding: 3.25rem 1.25rem; }
+
+  body { padding-bottom: 76px; }
+
+  .order-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 40;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    background: var(--ink);
+    border-top: 3px solid var(--mustard);
+    padding: 0.5rem;
+    padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+  }
+
+  .order-bar a {
+    font-family: var(--display);
+    font-size: 1.15rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.65rem 0.5rem;
+    border-radius: 4px;
+  }
+
+  .order-bar-call {
+    color: var(--cream);
+    border: 2px solid var(--cream);
+  }
+
+  .order-bar-order {
+    background: var(--mustard);
+    color: var(--ink);
+    border: 2px solid var(--mustard);
+  }
 }
