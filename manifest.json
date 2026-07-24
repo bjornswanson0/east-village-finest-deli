@@ -1,0 +1,14 @@
+{
+  "name": "East Village Finest Deli",
+  "short_name": "EVF Deli",
+  "description": "Family-run corner deli at E 4th & Avenue B, NYC, since 2010.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#7d2429",
+  "theme_color": "#7d2429",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
